@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Sultan's Dine</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Lightbox CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="gallery.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/plate2.png" type="image/x-icon" />
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom border-orange shadow py-3 fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navigation Links (Left) -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fw-bold" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fw-bold" href="about us.html">About Us</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fw-bold active" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fw-bold" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fw-bold" href="review.html">Review</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fw-bold" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Brand Text (Right) -->
+            <span class="navbar-brand mb-0 h1 ms-auto">Sultan Dine</span>
+        </div>
+    </nav>
+
+    <!-- Gallery Hero Section -->
+    <section class="hero-section mb-5">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-4">Our Food Gallery</h1>
+            <p class="lead mb-0">A visual feast of our finest culinary creations</p>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <div class="container mb-5">
+        <div class="row g-4">
+            <!-- Gallery Filters -->
+            <div class="col-12 mb-4">
+                <div class="d-flex justify-content-center flex-wrap gap-2">
+                    <button class="btn btn-outline-primary active" data-filter="all">All</button>
+                    <button class="btn btn-outline-primary" data-filter="kacchi">Kacchi</button>
+                    <button class="btn btn-outline-primary" data-filter="platters">Platters</button>
+                    <button class="btn btn-outline-primary" data-filter="specials">Specials</button>
+                </div>
+            </div>
+
+            <!-- Gallery Items -->
+            <div class="col-md-6 col-lg-4">
+                <a href="assets/gallery/image.png" data-lightbox="gallery" class="gallery-item" data-category="kacchi">
+                    <img src="assets/gallery/image.png" alt="Kacchi Dish" class="img-fluid rounded">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h5>Classic Kacchi</h5>
+                            <p>Our signature dish</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <a href="assets/gallery/image copy.png" data-lightbox="gallery" class="gallery-item" data-category="platters">
+                    <img src="assets/gallery/image copy.png" alt="Special Platter" class="img-fluid rounded">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h5>Royal Feast</h5>
+                            <p>Perfect for celebrations</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <a href="assets/gallery/image copy 2.png" data-lightbox="gallery" class="gallery-item" data-category="specials">
+                    <img src="assets/gallery/image copy 2.png" alt="Special Dish" class="img-fluid rounded">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h5>Chef's Special</h5>
+                            <p>Limited edition dish</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <a href="assets/gallery/image copy 3.png" data-lightbox="gallery" class="gallery-item" data-category="kacchi">
+                    <img src="assets/gallery/image copy 3.png" alt="Premium Kacchi" class="img-fluid rounded">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h5>Premium Kacchi</h5>
+                            <p>With extra toppings</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <a href="assets/gallery/image copy 4.png" data-lightbox="gallery" class="gallery-item" data-category="platters">
+                    <img src="assets/gallery/image copy 4.png" alt="Family Platter" class="img-fluid rounded">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h5>Family Feast</h5>
+                            <p>Serves 4-6 people</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <a href="assets/gallery/image copy 5.png" data-lightbox="gallery" class="gallery-item" data-category="specials">
+                    <img src="assets/gallery/image copy 5.png" alt="Special Combo" class="img-fluid rounded">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h5>Special Combo</h5>
+                            <p>Best value package</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Simple Footer -->
+    <footer class="bg-dark text-center py-4">
+        <h3 class="text-white mb-3">Sultan Dine</h3>
+        <p class="text-light mb-0">© 2025 Sultan's Dine. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <script>
+        // Initialize Lightbox
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true
+        });
+
+        // Gallery Filtering
+        document.querySelectorAll('[data-filter]').forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                document.querySelectorAll('[data-filter]').forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                const filter = this.getAttribute('data-filter');
+                document.querySelectorAll('.gallery-item').forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

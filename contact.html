@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Sultan's Dine</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/plate2.png" type="image/x-icon" />
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom border-orange shadow py-3 fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navigation Links (Left) -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fw-bold" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fw-bold" href="about us.html">About Us</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fw-bold" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fw-bold" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fw-bold" href="review.html">Review</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fw-bold active" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Brand Text (Right) -->
+            <span class="navbar-brand mb-0 h1 ms-auto">Sultan Dine</span>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-section py-5 mt-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <h2 class="fs-1 fw-bold">Get in Touch</h2>
+                    <p class="lead">We'd love to hear from you! Contact us for catering inquiries and more information.</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <!-- Contact Information -->
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="contact-info-container">
+                        <h3>Contact Information</h3>
+                        <p class="text-muted mb-4">
+                            Feel free to contact us for catering inquiries, special event planning, or any questions
+                            about our services. We're here to help make your event a success!
+                        </p>
+
+                        <div class="contact-info-item">
+                            <div class="icon-container">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Our Location</h5>
+                                <p>Daffodil International University<br>Birulia, Savar, Dhaka</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="icon-container">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Phone Number</h5>
+                                <p>+8801780492929</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="icon-container">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Email Address</h5>
+                                <p>sultandine@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="icon-container">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Operating Hours</h5>
+                                <p>Monday - Sunday: 11:00 AM - 10:00 PM</p>
+                            </div>
+                        </div>
+
+                        <!-- Social Media Links -->
+                        <div class="social-links mt-4">
+                            <h5>Follow Us</h5>
+                            <div class="d-flex gap-3 mt-3">
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-7">
+                    <div class="contact-form-container">
+                        <h3>Send Us a Message</h3>
+                        <p class="text-muted mb-4">
+                            Have a question or want to book our catering services? Fill out the form below and we'll get
+                            back to you as soon as possible.
+                        </p>
+
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your name"
+                                        required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subject"
+                                    placeholder="Enter message subject">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="6" placeholder="Enter your message"
+                                    required></textarea>
+                            </div>
+
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+                                <label class="form-check-label" for="agreeTerms">
+                                    I agree that my submitted data is being collected and stored.
+                                </label>
+                            </div>
+
+                            <div class="text-center text-md-start">
+                                <button type="submit" class="btn btn-primary submit-btn">
+                                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thank You Modal -->
+    <div class="modal fade" id="thankYouModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Thank You!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <i class="fa-solid fa-check-circle text-success mb-3" style="font-size: 3rem;"></i>
+                    <p>Your message has been sent successfully.</p>
+                    <p>We will get back to you as soon as possible!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Simple Footer -->
+    <footer class="bg-dark text-center py-4">
+        <h3 class="text-white mb-3">Sultan Dine</h3>
+        <p class="text-light mb-0">© 2025 Sultan's Dine. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scroll-to-Top Button -->
+    <button id="scrollToTopBtn" class="scroll-to-top-btn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap & JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Scroll-to-Top Button functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+            // Show/hide button based on scroll position
+            window.addEventListener('scroll', function () {
+                if (window.pageYOffset > 200) {
+                    scrollToTopBtn.classList.add('visible');
+                } else {
+                    scrollToTopBtn.classList.remove('visible');
+                }
+            });
+
+            // Scroll to top with smooth behavior
+            scrollToTopBtn.addEventListener('click', function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Handle form submission
+            const contactForm = document.getElementById('contactForm');
+            contactForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                // Show thank you modal
+                const thankYouModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+                thankYouModal.show();
+
+                // Clear form
+                contactForm.reset();
+            });
+        });
+    </script>
+</body>
+
+</html>

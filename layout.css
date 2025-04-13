@@ -1,0 +1,402 @@
+/* Signature Dishes Section - Modern Card Layout */
+.my-5.py-4.mx-4 {
+    background-color: #fcfaf8;
+    padding: 5rem 0 !important;
+    position: relative;
+}
+
+/* Section styling */
+.my-5.py-4.mx-4 .text-center.mb-5 {
+    position: relative;
+    margin-bottom: 4rem !important;
+}
+
+.my-5.py-4.mx-4 .text-center.mb-5 h2:after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: rgb(253, 57, 8);
+    margin: 1rem auto;
+}
+
+/* Card container */
+.my-5.py-4.mx-4 .row.g-4 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Card styling - new three-part design */
+.my-5.py-4.mx-4 .col-lg-6 {
+    margin-bottom: 2rem !important;
+}
+
+.my-5.py-4.mx-4 .card {
+    border: none;
+    overflow: visible;
+    background: transparent;
+    box-shadow: none;
+}
+
+/* Reset existing card structure */
+.my-5.py-4.mx-4 .card .row.g-0 {
+    display: grid;
+    grid-template-areas:
+        "image image"
+        "info details";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 0;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    overflow: hidden;
+    height: auto;
+}
+
+/* Image area - spans full width at top */
+.my-5.py-4.mx-4 .col-md-5 {
+    grid-area: image;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.my-5.py-4.mx-4 .feature-card {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.my-5.py-4.mx-4 .card:hover .feature-card {
+    transform: scale(1.05);
+}
+
+/* Image overlay with price tag */
+.my-5.py-4.mx-4 .col-md-5:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 100%);
+    z-index: 1;
+}
+
+/* Reset card body layout */
+.my-5.py-4.mx-4 .col-md-7 {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    padding: 0;
+}
+
+/* Split the card body into two columns */
+.my-5.py-4.mx-4 .card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Create an "ingredients" panel */
+.my-5.py-4.mx-4 .card-body:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 1px;
+    background: #eee;
+}
+
+/* Title and badge area */
+.my-5.py-4.mx-4 .card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* Badge styling */
+.my-5.py-4.mx-4 .d-flex.mb-2 {
+    margin-bottom: 1rem !important;
+}
+
+.my-5.py-4.mx-4 .badge-special {
+    padding: 0.4rem 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.7rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Description text */
+.my-5.py-4.mx-4 .card-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Price and CTA section */
+.my-5.py-4.mx-4 .d-flex.justify-content-between {
+    grid-area: details;
+    background-color: #fff;
+    padding: 1.5rem;
+    align-items: center;
+    border-top: 1px dashed #eee;
+}
+
+/* Price styling */
+.my-5.py-4.mx-4 .text-danger.fw-bold {
+    font-size: 1.8rem !important;
+    letter-spacing: -0.5px;
+    position: relative;
+}
+
+/* Currency symbol styling */
+.my-5.py-4.mx-4 .text-danger.fw-bold:after {
+    content: "৳";
+    font-size: 1.2rem;
+    position: relative;
+    top: -0.5rem;
+}
+
+/* Button styling */
+.my-5.py-4.mx-4 .btn-outline-danger {
+    border-radius: 30px;
+    padding: 0.5rem 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 5px 15px rgba(253, 57, 8, 0.1);
+    transition: all 0.3s ease;
+}
+
+.my-5.py-4.mx-4 .btn-outline-danger:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(253, 57, 8, 0.15);
+}
+
+/* View all menu button */
+.my-5.py-4.mx-4 .text-center.mt-4 {
+    margin-top: 3rem !important;
+}
+
+.my-5.py-4.mx-4 .text-center.mt-4 .btn {
+    padding: 0.8rem 2rem;
+    font-weight: 600;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    box-shadow: 0 10px 20px rgba(253, 57, 8, 0.15);
+}
+
+/* Featured item tag */
+.my-5.py-4.mx-4 .col-lg-6:first-child .card:before {
+    content: "Featured";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgb(253, 57, 8);
+    color: white;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    z-index: 10;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Nutritional info decorative icon */
+.my-5.py-4.mx-4 .d-flex.justify-content-between:before {
+    content: "\f805";
+    /* Nutritional info icon */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 1rem;
+    color: #ddd;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 991.98px) {
+    .my-5.py-4.mx-4 .card .row.g-0 {
+        grid-template-areas:
+            "image image"
+            "info info"
+            "details details";
+    }
+
+    .my-5.py-4.mx-4 .col-md-5 {
+        height: 250px;
+    }
+
+    .my-5.py-4.mx-4 .card-body:after {
+        display: none;
+    }
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.nav-brand {
+    order: 2;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #E65100;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.nav-menu {
+    order: 1;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li a {
+    color: #2D2D2D;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-menu li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #E65100;
+    transition: width 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: #E65100;
+}
+
+.nav-menu li a:hover::after {
+    width: 100%;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #2D2D2D;
+    color: #fff;
+    padding: 3rem 0 2rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.footer-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #FFB74D;
+    margin-bottom: 1rem;
+}
+
+.footer-section h3 {
+    color: #FFB74D;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.footer-section h3::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #E65100;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #FFB74D;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav-brand {
+        order: 1;
+        margin-bottom: 1rem;
+    }
+
+    .nav-menu {
+        order: 2;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-section h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
